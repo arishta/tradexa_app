@@ -1,10 +1,10 @@
 from django.db import models
 
 class User(models.Model):
-    username   = models.CharField(max_length = 50,unique = True)
+    username   = models.CharField(max_length = 50, unique = True)
     first_name  = models.CharField(max_length = 50)
     last_name   = models.CharField(max_length = 50)
-    email  = models.EmailField(max_length = 70,blank = True,unique = True)
+    email  = models.EmailField(max_length = 70, blank = True, unique = True)
     password = models.CharField(max_length = 20)
 
     def __str__(self):
